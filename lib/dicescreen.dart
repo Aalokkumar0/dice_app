@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
 
@@ -30,7 +31,9 @@ class _DiceScreenState extends State<DiceScreen> {
         ),
       ),
 
-      body: Center(
+      body:SingleChildScrollView(
+        scrollDirection: Axis.vertical;
+      Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -39,11 +42,13 @@ class _DiceScreenState extends State<DiceScreen> {
               ),
 
               SizedBox(height: 40,),
+              Image.asset('assets/images/tree'),
 
             ElevatedButton(onPressed: rollDice, child: Text("click me ")),
           ],
         ),
       ),
+    ),
     );
   }
 }
