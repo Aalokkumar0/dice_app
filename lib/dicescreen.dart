@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
 
@@ -31,24 +30,21 @@ class _DiceScreenState extends State<DiceScreen> {
         ),
       ),
 
-      body:SingleChildScrollView(
-        scrollDirection: Axis.vertical;
-      Center(
+      body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              '🎲${diceNumber.toString()}',style: TextStyle(fontWeight:FontWeight.w900,fontSize:100),
-              ),
+              '🎲${diceNumber.toString()}',
+              style: TextStyle(fontWeight: FontWeight.w900, fontSize: 100),
+            ),
 
-              SizedBox(height: 40,),
-              Image.asset('assets/images/tree'),
+            SizedBox(height: 40),
 
             ElevatedButton(onPressed: rollDice, child: Text("click me ")),
           ],
         ),
       ),
-    ),
     );
   }
 }
