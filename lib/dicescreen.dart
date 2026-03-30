@@ -36,7 +36,7 @@ class _DiceScreenState extends State<DiceScreen> {
           children: [
             Text(
               '🎲${diceNumber.toString()}',
-              style: TextStyle(fontWeight: FontWeight.w900, fontSize: 200),
+              style: TextStyle(fontWeight: FontWeight.w900, fontSize: 150),
             ),
 
             SizedBox(height: 40),
