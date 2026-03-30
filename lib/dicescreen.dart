@@ -33,6 +33,7 @@ class _DiceScreenState extends State<DiceScreen> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+
           children: [
             Text(
               '🎲${diceNumber.toString()}',
